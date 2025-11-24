@@ -1,0 +1,63 @@
+FRONTEND TESTING GUIDE (CYPRESS)
+
+  ------------------------------------
+  PROJECT LOCATION
+  ------------------------------------
+  my-mern-app/
+│
+└── frontend-clean/
+    │
+    ├── cypress/
+    │   │
+    │   ├── downloads/
+    │   │
+    │   ├── e2e/
+    │   │   ├── aboutPage.cy.jsx
+    │   │   ├── calendar.cy.js
+    │   │   ├── forgotPasswordPage.cy.jsx
+    │   │   ├── homePage.cy.jsx
+    │   │   ├── loginPage.cy.jsx
+    │   │   ├── memberShpePage.cy.jsx
+    │   │   ├── ourTeamPage.cy.jsx
+    │   │   ├── resourcesPage.cy.jsx
+    │   │   ├── scholarShpePage.cy.jsx
+    │   │   └── signupPage.cy.jsx
+    │   │
+    │   ├── fixtures/
+    │   └── support/
+    │
+    ├── public/
+    │
+    ├── src/
+    │
+    ├── package.json
+    │
+    └── cypress.config.js
+
+  ------------------------------------
+
+HOW TO RUN CYPRESS E2E TESTS
+
+STEP 1 — Start Backend (Port 5001)
+
+cd my-mern-app/backend npm install npm run dev
+
+You should see: Server is running on port 5001
+
+STEP 2 — Start Frontend (Port 3000)
+
+cd my-mern-app/frontend-clean npm install npm start
+
+STEP 3 — Open Cypress Test Runner
+
+cd my-mern-app/frontend-clean npx cypress open
+
+In the Cypress window: - Choose E2E Testing - Select Chrome - Choose any
+test from cypress/e2e/
+
+  -------
+  NOTES
+  -------
+
+-   Frontend Cypress tests require the frontend server to be running
+-   Test files are located in frontend-clean/cypress/e2e/

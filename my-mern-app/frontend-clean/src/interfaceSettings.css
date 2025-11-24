@@ -1,0 +1,1071 @@
+/* global CSS variables */
+:root {
+  --primary-color: #F5EADD;
+  --secondary-color:  #F5EADD;
+  --font-family: 'Roboto', sans-serif;
+  --base-padding: 16px;
+  --base-margin: 16px;
+  --border-radius: 8px;
+   --shpe-blue: #003366;
+
+/*Shayla*/
+  --subnav-bg: #ffffff;
+  --resources-btn-bg: #78aabe;
+  --resources-btn-hover: #b4eaff; 
+  --resources-card-bg: #fefefe;
+  --resources-heading-color: #595E5E;
+}
+
+/* Logo Razan */
+.logo-img {
+  width: 300px;        
+  margin-bottom: 5px; 
+  margin-left: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #F5EADD, #F5EADD); 
+  min-height: 100vh;
+}
+.welcome-heading {
+  color: var(--shpe-blue); /* or any color you prefer */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+.thin-bar {
+  height: 2px; /* very thin */
+  background-color:var(--shpe-blue) ; /* black color, you can change it */
+  width: 100%;
+}
+
+/* Login box Razan */
+
+.frame {
+  border: 4px solid var(--shpe-blue);
+  border-radius: 10px;
+  padding: 1rem; /* space inside the frame */
+  margin: 1rem;  /* space between the two boxes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background: #F5EADD;
+  padding: 2rem; /* inner content spacing */
+  border-radius: 10px;
+  /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);*/
+  width: 100%;
+}
+
+/* Target h2, h3, p, and labels inside your login box */
+.box h2,
+.box h3,
+.box p,
+.box label {
+color: var(--shpe-blue) !important; /* use !important to override Bootstrap */
+}
+
+h1,h2,h3 {
+  color: var(--shpe-blue);
+}
+/* Login button Razan */
+.btn-primary {
+  background-color: var(--shpe-blue);
+  color: #fff;
+  border: none;
+}
+/* Login button hover effect Razan */
+.btn-primary:hover {
+  background-color: #4756F1;
+}
+/* Extra links for fForgot Password style Razan */
+.extra-links a {
+  color: var(--shpe-blue);
+  text-decoration: none;
+}
+/* Extra links hoverfor Forgot Password effect Razan */
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* Home button Razan */
+.navbar .btn-home {
+  background-color: var(--shpe-blue);
+  color: #fff;
+  padding: 0.25rem 0.75rem; /* smaller vertical and horizontal padding */
+  font-size: 0.85rem;        /* slightly smaller text */
+  border: none;
+  border-radius: 6px;        /* tighter corners */
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+   display: inline-block !important;
+  width: auto !important;
+}
+
+
+/* Hover effect for Home button Razan */
+.navbar .btn-home:hover {
+  background-color: #002244; /* Slightly darker on hover */
+  color: #fff;
+}
+/* === Adjusted Carousel Size (Razan) === */
+#homeCarousel {
+  border-radius: 12px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  max-width: 80%;  /* adjust 70–90% depending on how wide you want */
+  margin: 2rem auto; /* centers horizontally */
+  display: block;
+}
+
+#homeCarousel .carousel-item img {
+  height: 550px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Responsive tweak for mobile */
+@media (max-width: 768px) {
+  #homeCarousel .carousel-item img {
+    height: 220px; /* smaller height on phones */
+  }
+}
+
+/*Shayla: Prevents the nav bar from shifting (short and long pages*/
+html {
+  overflow-y: scroll;
+}
+
+/*Shayla Razan*/
+.sub-nav {
+  background-color: var(--subnav-bg);
+  height: 80px; /* adjust this value as needed */
+  display: flex;
+  align-items: center;
+  padding: 0 1rem; /* optional horizontal padding */
+}
+
+
+/*Shayla */
+.btn-resources {
+  background-color: var(--resources-btn-bg);
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+/*Shayla */
+.btn-resources:hover {
+  background-color: var(--resources-btn-hover);
+}
+
+/*Shayla */
+.resources-header {
+  color: var(--shpe-blue);
+  margin-bottom: 1.5rem;
+}
+
+/*Shayla */
+.resources-card {
+  background-color: var(--resources-card-bg);
+}
+
+.card.resources-card {
+  border: 2px solid var(--shpe-blue) !important;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+
+/*Shayla */
+.resources-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/*Shayla */
+.btn-outline-resources {
+  border: 2px solid var(--shpe-blue);
+  color: var(--shpe-blue);
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/*Shayla */
+.btn-outline-resources:hover {
+  background-color: var(--shpe-blue);
+  color: #fff;
+}
+
+/*Shayla */
+.card-title {
+  font-weight: 600;
+}
+
+/*Shayla */
+.clickable-image {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.clickable-image:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+/* Full-screen dark overlay */
+.image-overlay {
+  position: fixed;
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050; 
+}
+
+/* Centered big image */
+.image-overlay-img {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* Ademola – Calendar theme */
+:root{
+  --calendar-bg:        #ffffff;          
+  --calendar-border:    #d7dee6;          
+  --calendar-header-bg: #0c3a60; 
+  --calendar-header-color: #fff;
+  --calendar-day-bg:    #f3f6f9;          
+  --calendar-date-hover:#eef3f7;          
+}
+
+
+.calendar{
+  background:var(--calendar-bg);
+  border:1px solid var(--calendar-border);
+  border-radius:12px;
+  overflow:visible;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.calendar-header{
+  display:grid;
+  grid-template-columns:140px 1fr 220px; /* left | center | right */
+  align-items:center;
+  gap:8px;
+  padding:16px 20px;
+  background:var(--calendar-header-bg);
+  color:var(--calendar-header-color);
+  border-radius:12px 12px 0 0;
+}
+.header-left{ justify-self:start; }
+.month-title{ justify-self:center; font-weight:700; font-size:1.25rem; }
+.header-right{ justify-self:end; display:flex; gap:8px; }
+
+.cal-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:8px 14px; border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.10); color:#fff; border-radius:8px;
+  font-weight:600; cursor:pointer; text-decoration:none;
+  transition:transform .02s ease, background .15s ease, border-color .15s ease;
+}
+.cal-btn:hover{ background:rgba(255,255,255,.18); border-color:rgba(255,255,255,.35); }
+.cal-btn:active{ transform:translateY(1px); }
+
+/* === Grid === */
+.calendar-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:8px;
+  padding:16px 20px 20px;
+  background:#fff;
+  border-top:1px solid var(--calendar-border);
+  position: relative; z-index: 1;
+}
+
+/* Weekday labels */
+.day-label,
+.day{ 
+  background:var(--calendar-day-bg);
+  text-align:center;
+  font-weight:600;
+  padding:.5rem;
+  border:1px solid var(--calendar-border);
+  border-radius:8px;
+}
+
+/* === Date cells: cornered number + centered events === */
+.date-cell,
+.date{ 
+  position:relative;
+  min-height:120px;
+  background:#fafafa;
+  border:1px solid var(--calendar-border);
+  border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  padding:8px;
+  cursor:pointer;
+}
+.date-cell:hover,
+.date:hover{ background:var(--calendar-date-hover); }
+.date-cell.empty,
+.date.empty{ background:#f1f1f1; cursor:default; border-style:dashed; }
+
+.date-number{
+  position:absolute; top:8px; left:10px;
+  font-weight:700; color:#555; font-size:.95rem;
+}
+.events{
+  width:100%; display:flex; flex-direction:column; align-items:center;
+  gap:6px; text-align:center;
+}
+.no-events{ opacity:.4; font-size:.9rem; }
+.event-chip{
+  padding:4px 8px; border-radius:999px; border:1px solid #ddd;
+  font-size:.85rem; max-width:90%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.date-cell.today,
+.date.today{ outline:3px solid #ff8a00; background:#fff7ef; }
+
+/* Buttons */
+.home-btn{
+  background-color:var(--calendar-header-bg)!important;
+  color:var(--calendar-header-color)!important;
+  border-color:var(--calendar-header-bg)!important;
+  text-decoration:none;
+}
+
+
+.event-chip{
+  position:relative;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid #ddd;
+  background:#fff;
+  font-size:.85rem;
+  max-width:90%;
+  overflow: visible !important;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  cursor:pointer;
+  transition:box-shadow .15s ease, transform .02s ease;
+}
+.event-chip:active{ transform: translateY(1px); }
+.event-short{
+  display: block;
+  max-width: 200px;               
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+
+.event-popover{
+  position:absolute;
+  left:50%;
+  top: calc(100% + 8px);
+  transform: translateX(-50%) translateY(6px);
+  width: min(260px, 86vw);
+  background:#fff;
+  color:#222;
+  border:1px solid #e5e8ee;
+  border-radius:10px;
+  box-shadow:0 10px 24px rgba(13, 41, 64, .12);
+  padding:10px 12px;
+  z-index: 1000;
+  opacity:0;
+  pointer-events:none;
+  transition: opacity .15s ease, transform .15s ease;
+  line-height:1.25;
+  text-align:left;
+}
+
+
+.event-chip:hover .event-popover{
+  opacity:1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events:auto;
+}
+
+
+.event-popover.show{
+  opacity:1 !important;
+  transform: translateX(-50%) translateY(0) !important;
+  pointer-events:auto !important;
+}
+
+
+.date-cell{ overflow: visible; }
+
+.calendar-header.calendar-header--centered{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  background: var(--calendar-header-bg);
+  color: var(--calendar-header-color);
+  padding:16px 20px;
+  border-radius:12px 12px 0 0;
+}
+.controls-center{ display:flex; gap:10px; }
+
+
+@media (max-width:768px){
+  .calendar-header{ grid-template-columns:110px 1fr 170px; padding:12px 14px; }
+  .month-title{ font-size:1.1rem; }
+  .cal-btn{ padding:6px 10px; font-size:.9rem; }
+  .date-cell, .date{ min-height:100px; }
+}
+
+
+/* Eli */
+:root {
+  --main-bg-color: #f4f4f9; /* Light background color */
+  --card-bg-color: #ffffff; /* White card background */
+  --primary-text-color: #333333; /* Dark text color for readability */
+  --accent-color: #e2bf72; /* Accent color for buttons and highlights */
+  --button-bg-color: #503f2c; /* Button background color */
+  --button-hover-bg-color: #5e5134; /* Button hover background color */
+  --font-family: 'Verdana', sans-serif; /* Font family for the app */
+  --blockcenter: #fff; 
+}
+.body 
+{
+    font-family: var(--font-family); 
+    background: var(--main-bg-color); 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    height: 100%;
+}
+.header
+{
+    width: 100%;
+    background-color: var(--accent-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: white;
+}
+
+.nav
+{
+    width: 100%;
+    background-color: var(--accent-color);
+}
+
+.square
+{
+    max-width: 600px;
+    margin: 80px auto;
+    background: var(--card-bg-color);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 40px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 
+{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #dacca7;
+}
+
+form input[type="submit"]
+{
+    width: 100%;
+    padding: 10px;
+    background: var(--button-bg-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover
+{
+    background: var(--button-hover-bg-color);
+}
+
+.home 
+{
+    background-color: #cab764;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+}
+.home:hover 
+{
+    background-color: #bfa15a; 
+}
+
+.form-group 
+{
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: left;
+}
+
+.form-group label 
+{
+    width: 150px;
+    margin-left: 10px;
+    text-align: center; 
+    padding-right: 10px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] 
+{
+    flex: 1; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"]{
+  margin-top: 5px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover
+{
+  background-color: #d4a73e;
+}
+
+.footer {
+  background-color: var(--shpe-blue);
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff20;
+  color: white;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: #ffffff40;
+}
+
+
+/*Sponsors icons Razan*/
+.sponsors-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 0.75rem 1rem;
+  scroll-behavior: smooth;
+  justify-content: center;
+  background-color: #F5EADD; 
+  border-radius: 12px;     
+}
+
+.sponsor-small img {
+  height: 30px;      
+  width: auto;
+  filter: none;       
+  transition: transform 0.3s ease;
+}
+
+.sponsor-small:hover img {
+  transform: scale(1.2); /* hover zoom */
+}
+
+/* Hide scrollbar for clean look */
+.sponsors-scroll::-webkit-scrollbar {
+  display: none;
+}
+.sponsors-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Eli - Membership Page */
+.membership-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+
+.info h1{
+  color: var(--shpe-blue);
+  font-weight: 600;
+}
+
+.centered{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 3rem;
+}
+
+.centered-block{
+  flex: 1;
+  max-width: 45%;
+}
+.centered-block.left{
+  text-align: left;
+}
+
+.centered-block.right{
+  text-align: right;
+}
+
+.centered-block.middle{
+  margin-bottom: 0.5rem;
+  margin-left: 12rem;
+  
+}
+
+.centered-block.ship{
+  margin-bottom: 0.1rem;
+  margin-left: 7rem;
+}
+
+.centered-block.mid{
+  margin-bottom: 1rem;
+  margin-left: 13rem;
+}
+
+.centered-block.ment{
+  margin-bottom: 1rem;
+  margin-left: 17rem;
+}
+
+.info {
+  text-align: center;
+  margin: 35px;
+}
+
+.info h2 {
+  font-size: 1.5em;
+  margin-bottom: 1px;
+}
+
+.regions {
+  padding: 1px;
+  background-color:#F5EADD ;
+  text-align: center;
+}
+
+.support {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+
+}
+
+/* Cards Eli Dunmoye */
+.block-center {
+  background-color: var(--blockcenter);
+}
+
+.card.block-center {
+  border: 2px solid var(--shpe-blue);
+  background-color: var(--blockcenter);
+  color: var(--shpe-blue) !important;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  
+}
+
+.block-center:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.block-body {
+  background-color: #fff;
+  color: #e0f7f5;
+}
+
+
+/* Razan - Our Team Page */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+/* Razan - Our Team Page */
+.team-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid var(--shpe-blue);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ transition: transform 0.2s, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+/* Razan - Our Team Page */
+.team-card:hover {
+  transform: translateY(-5px);
+}
+/* Razan - Our Team Page */
+.team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Footer Copyright Text */
+.footer-copy {
+  color: #fff;        
+  font-size: 0.85rem;     
+  margin-top: 0.5rem;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+
+/* Main container */
+.about-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-hero img {
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  max-width: 450px;
+}
+
+/* Mission - Vision - Values */
+.mv-section h3 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.mv-card {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 2px solid var(--shpe-blue);
+}
+
+/* Values list */
+.values-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Reach Section */
+.reach-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.reach-map {
+  width: 45%;
+  min-width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.reach-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.reach-tile {
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid var(--shpe-blue);
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.reach-tile .num {
+  display: block;
+  font-weight: 700;
+  color: var(--shpe-blue);
+  font-size: 1.4rem;
+}
+/* Blue line above the Mission · Vision · Values section */
+.mv-section {
+  border-top: 3px solid var(--shpe-blue);
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.mv-card h4 {
+  text-align: center;
+  color: var(--shpe-blue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.reach-section h3 {
+  text-align: center;
+  color: var(--shpe-blue);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.reach-section {
+  border-top: 3px solid var(--shpe-blue);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+.about-hero {
+  color: var(--shpe-blue);
+}
+/* Fix heading colors for About section */
+.about-main h1,
+.about-main h2,
+.about-main h4 {
+  color: var(--shpe-blue);
+  text-align: center;
+}
+
+.support {
+  background-color: #F5EADD;    
+  padding: 40px 0; /* reduced from 150px */
+  text-align: center;
+  border-top: 3px solid var(--shpe-blue);  
+  border-bottom: 3px solid var(--shpe-blue);
+}
+.support h2 {
+  color: var(--shpe-blue);
+  font-weight: 700;
+  letter-spacing: 0.25rem;  
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.spaced-title {
+  letter-spacing: 0.35rem;  
+  color: var(--shpe-blue);
+  text-align: center;
+  font-weight: 700;
+}
+.mv-section,
+.reach-section {
+  border-top: 3px solid var(--shpe-blue);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+}
+/* Fix: Navbar collapse menu appears BEHIND the page */
+.navbar-collapse {
+  position: relative;
+  z-index: 1050 !important;
+  background: white; 
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Ensure navbar sits above carousel and content */
+.navbar, .sub-nav {
+  z-index: 1100 !important;
+  position: relative;
+}
+
+/* Prevent ugly full-width blue buttons inside collapse */
+.navbar .btn-home {
+  display: inline-block !important;
+  width: auto !important;
+}
+.photo-box img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+
+
+.centered-block p {
+  color: var(--shpe-blue);
+}
+
+
+
+
+.centered-block {
+  max-width: 500px;        
+  margin: 0 auto 40px;     
+}
+
+/* Photo box adjustments Razan*/
+.photo-box img {
+  width: 100%;
+  height: 260px;          
+  object-fit: cover;      
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Card box size Razan*/
+.block-center {
+  width: 100%;
+  min-height: 260px;        
+  border-radius: 12px;
+}
+
+/* Card inner content aligned Razan*/
+.block-body {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/* Hover animation for Membership photos Razan*/
+.photo-box {
+  overflow: hidden;            
+  border-radius: 12px;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.photo-box:hover img {
+  transform: scale(1.08); 
+}
+
+.membership-page {
+  background-color: #f5eadd;
+  padding-bottom: 40px;
+}
+
+/* Section titles */
+.hero h1,
+.initiatives-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--shpe-blue);
+  margin: 40px 0 20px 0;
+  letter-spacing: 4px;
+}
+
+
+
+/* Fix background blocks */
+.regions {
+  background-color: #f5eadd;
+  padding: 20px 0;
+}
+
+/* Clean blue divider line */
+.thin-bar {
+  height: 4px;
+  background-color: var(--shpe-blue);
+}
+
+/* Fix card text color */
+.card.block-center h2 {
+  color: var(--shpe-blue) !important;
+  font-weight: 700 !important; /* bold */
+}
+
+/* FORCE FIX: OUR INITIATIVES section */
+.info-section {
+  background-color: #F5EADD !important;    /* match page background */
+  padding: 10px 10px 0 0 !important;              /* small clean spacing */
+  margin: 0 !important;
+  border: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+/* FORCE underline + color */
+.info-section .initiatives-title {
+  color: var(--shpe-blue) !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 6px !important;
+  margin: 0 !important;
+  padding: 30px 10px 0 0 !important;
+}

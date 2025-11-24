@@ -1,0 +1,35 @@
+BACKEND TESTING GUIDE (JEST)
+
+  ------------------------------------
+  PROJECT LOCATION
+  ------------------------------------
+my-mern-app/
+│
+└── backend/
+    │
+    ├── src/
+    │   └── (backend source code files)
+    │
+    ├── tests/
+    │   └── app.test.js          <-- Jest test file
+    │
+    ├── server.js               <-- Starts backend server
+    │
+    └── package.json            <-- Backend dependencies & scripts
+  ------------------------------------
+
+HOW TO RUN BACKEND TESTS
+
+1.  Open a terminal and navigate to the backend folder:
+
+    cd my-mern-app/backend
+
+2.  Install dependencies if needed:
+
+    npm install
+
+3.  Run backend tests:
+
+    npm test
+
+This will execute all Jest tests inside: backend/tests/app.test.js
